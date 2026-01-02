@@ -1,5 +1,8 @@
 # Instituto Internacional de Constelaciones Familiares (IDECF)
 
+**Versión**: 1.1.0  
+**Última actualización**: Enero 2026
+
 Sitio web oficial del Instituto Internacional de Constelaciones Familiares.
 
 ## SEO y Metadata
