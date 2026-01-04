@@ -8,7 +8,7 @@ Sitio web oficial del Instituto Internacional de Constelaciones Familiares.
 ## SEO y Metadata
 
 **Título del Sitio:** IDECF - Instituto Internacional de Constelaciones Familiares  
-**Descripción Corta:** Instituto especializado en Constelaciones Familiares. Formación profesional, diplomados y talleres en técnicas sistémicas y terapia familiar con reconocimiento internacional.
+**Descripción Corta:** Instituto especializado en Constelaciones Familiares. Formación profesional, diplomados y talleres en técnicas sistémicas y terapia familiar con reconocimiento internacional. 
 
 ## 📋 Descripción
 
