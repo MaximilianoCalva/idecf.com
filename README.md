@@ -75,8 +75,14 @@ Para actualizar el contenido del reglamento:
 
 ## 📄 Licencia
 
-© 2024 Instituto de Derecho en Ciencias Forenses. Todos los derechos reservados.
+© 2024 Instituto Internacional de Constelaciones Familiares. Todos los derechos reservados.
 
-## 👤 Contacto
+## 👤 Contacto y Redes Sociales
 
-Para más información sobre el instituto, visita [idecf.com](https://idecf.com)
+- **Sitio Web:** [idecf.com](https://idecf.com)
+- **Facebook:** [IDECF](https://facebook.com/203152456224733)
+- **Instagram:** [@constelacionesfamidecf](https://instagram.com/constelacionesfamidecf)
+- **TikTok:** [@constelacionesfamidecf](https://www.tiktok.com/@constelacionesfamidecf)
+- **YouTube:** [IDECF](https://www.youtube.com/channel/UCXZ3SI7AcpwRCjvWm9y7jzQ)
+- **WhatsApp:** +52 1 33 2935 7723
+- **Canal WhatsApp:** [Unirse](https://whatsapp.com/channel/0029VbAe4fl2P59rdcs99r44)
