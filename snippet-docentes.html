@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docentes IDECF</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        .docentes-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .docentes-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            color: #2c5f2d;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .docentes-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .docente-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(44, 95, 45, 0.1);
+            margin-bottom: 50px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .docente-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(44, 95, 45, 0.15);
+        }
+
+        .docente-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        .docente-image-container {
+            position: relative;
+        }
+
+        .docente-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .docente-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .docente-name {
+            font-size: 32px;
+            font-weight: 700;
+            color: #2c5f2d;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .docente-bio {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            text-align: justify;
+        }
+
+        .docente-bio p {
+            margin-bottom: 15px;
+        }
+
+        .docente-bio p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .docente-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 30px;
+            }
+
+            .docente-image {
+                height: 400px;
+            }
+
+            .docente-name {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            .docentes-title {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .docentes-wrapper {
+                padding: 40px 15px;
+            }
+
+            .docente-content {
+                padding: 25px;
+            }
+
+            .docente-image {
+                height: 300px;
+            }
+
+            .docente-name {
+                font-size: 24px;
+            }
+
+            .docentes-title {
+                font-size: 28px;
+            }
+
+            .docente-bio {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="docentes-wrapper">
+        <h1 class="docentes-title">Nuestros Docentes</h1>
+        <p class="docentes-subtitle">Conoce a los profesionales que guían tu formación con experiencia, pasión y
+            compromiso.</p>
+
+        <!-- Docente 1: Silvia Hernández Sevilla -->
+        <div class="docente-card">
+            <div class="docente-content">
+                <div class="docente-image-container">
+                    <img src="https://idecf.com/wp-content/uploads/2025/12/Silvia-hernandez-sevilla-e1765386085583.png"
+                        alt="Silvia Hernández Sevilla" class="docente-image">
+                </div>
+                <div class="docente-info">
+                    <h2 class="docente-name">Silvia Hernández Sevilla</h2>
+                    <div class="docente-bio">
+                        <p>Silvia Hernández Sevilla es psicoterapeuta con un enfoque humanista, sistémico y relacional,
+                            dedicada a acompañar procesos de desarrollo y crecimiento personal desde el amor, el
+                            conocimiento y la integración del ser.</p>
+
+                        <p>Es Psicoterapeuta Gestalt formada en el Instituto Gestalt de Guadalajara y cuenta con
+                            especialidad en Constelaciones Familiares por Corpo Alma Terapeutika. Su experiencia incluye
+                            el acompañamiento terapéutico en empresas como Contpaqi, CompuSoluciones, Tesselar y
+                            Pastelerías Marisa, brindando apoyo emocional y procesos de contención a colaboradores.</p>
+
+                        <p>A lo largo de su trayectoria, ha acompañado a personas en procesos de duelo, enfermedad,
+                            pérdidas, cambios de vida, abuso, estrés, ansiedad, depresión, codependencia, vínculos y
+                            lealtades familiares, así como cierres de ciclo.</p>
+
+                        <p>Además de su formación terapéutica, es Licenciada en Administración con área en Computación
+                            por el ITESO, y cuenta con diplomados en Psicología, Tanatología, Relación de Ayuda y
+                            Descodificación Biológica de las Enfermedades.</p>
+
+                        <p>Durante 14 años apoyó a matrimonios desde una labor de servicio comunitario, desempeñándose
+                            como Coordinadora General en Guadalajara y posteriormente como Coordinadora Nacional de
+                            ECIM.</p>
+
+                        <p>Ha colaborado como voluntaria en el Centro San Camilo, acompañando a enfermos crónicos y
+                            terminales, y formó parte del Equipo Nacional de la Red Mundial de Oración del Papa (RMOP).
+                        </p>
+
+                        <p>Su vocación es acompañar, sostener y facilitar procesos de transformación profunda en cada
+                            persona que se acerca a su labor terapéutica.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Docente 2: Gilma Barragán R. -->
+        <div class="docente-card">
+            <div class="docente-content">
+                <div class="docente-image-container">
+                    <img src="https://idecf.com/wp-content/uploads/2025/08/2.png" alt="Gilma Barragán R."
+                        class="docente-image">
+                </div>
+                <div class="docente-info">
+                    <h2 class="docente-name">Gilma Barragán R.</h2>
+                    <div class="docente-bio">
+                        <p>Docente y Terapeuta en el Instituto de Constelaciones Familiares IDECF y el Instituto
+                            Fernando Sánchez.</p>
+
+                        <p>Con una profunda vocación de servicio y una sólida formación terapéutica, Gilma Barragán es
+                            especialista en Biodesprogramación, Constelaciones Familiares y Numerología Holística. Su
+                            trayectoria también abarca el acompañamiento en procesos delicados de vida, siendo experta
+                            en intervención en duelo, cuidados paliativos y acompañamiento al final de la vida.</p>
+
+                        <p>Además de su labor terapéutica, es Licenciada en Educación Básica Primaria, lo que refuerza
+                            su enfoque pedagógico y humano en cada espacio formativo que guía.</p>
+
+                        <p>En el IDECF, Gilma comparte su experiencia con sensibilidad, sabiduría y compromiso,
+                            acompañando a quienes desean transformar su vida y formarse como terapeutas integrales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Docente 3: Yusmin González -->
+        <div class="docente-card">
+            <div class="docente-content">
+                <div class="docente-image-container">
+                    <img src="https://idecf.com/wp-content/uploads/2025/12/Yusmin.png" alt="Yusmin González"
+                        class="docente-image">
+                </div>
+                <div class="docente-info">
+                    <h2 class="docente-name">Yusmin González</h2>
+                    <div class="docente-bio">
+                        <p>Yusmin González es psicóloga y psicoterapeuta, con más de quince años de experiencia en el
+                            acompañamiento terapéutico de procesos emocionales, relacionales y de desarrollo personal.
+                        </p>
+
+                        <p>Cuenta con formación en Psicoterapia Sistémica y Gestalt, y una amplia experiencia en el
+                            trabajo clínico individual y grupal. Su práctica terapéutica se orienta a la comprensión de
+                            los sistemas familiares y vinculares, abordando las dinámicas relacionales que influyen en
+                            el bienestar emocional y en los procesos de cambio personal.</p>
+
+                        <p>Ha acompañado a personas en procesos de ansiedad, estrés, crisis vitales, conflictos
+                            vinculares, duelos, cierres de ciclo y procesos de transformación personal, ofreciendo un
+                            espacio terapéutico basado en la escucha, la claridad y el respeto por el ritmo de cada
+                            proceso.</p>
+
+                        <p>Además, cuenta con experiencia en la facilitación de espacios formativos y clases en
+                            modalidad online, integrando el enfoque sistémico en contextos educativos y terapéuticos,
+                            favoreciendo la toma de conciencia, la regulación emocional y el desarrollo personal. Su
+                            enfoque se centra en la comprensión de los sistemas familiares y vinculares, promoviendo la
+                            toma de conciencia, la regulación emocional y procesos de transformación personal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
