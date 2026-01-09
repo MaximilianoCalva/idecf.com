@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplomados IDECF</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        .diplomados-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .diplomados-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .diplomados-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #6D0757;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .diplomados-subtitle {
+            font-size: 20px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Grid de Diplomados */
+        .diplomados-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        /* Tarjeta de Diplomado */
+        .diplomado-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(109, 7, 87, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .diplomado-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(109, 7, 87, 0.2);
+        }
+
+        .diplomado-image-container {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .diplomado-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .diplomado-card:hover .diplomado-image {
+            transform: scale(1.05);
+        }
+
+        .diplomado-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #6D0757 0%, #8E0970 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(109, 7, 87, 0.3);
+        }
+
+        .diplomado-content {
+            padding: 30px;
+        }
+
+        .diplomado-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #6D0757;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .diplomado-description {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .diplomado-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .info-icon {
+            font-size: 18px;
+        }
+
+        .diplomado-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #6D0757 0%, #8E0970 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(109, 7, 87, 0.2);
+        }
+
+        .diplomado-card:hover .diplomado-cta {
+            transform: translateX(5px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .diplomados-wrapper {
+                padding: 40px 15px;
+            }
+
+            .diplomados-title {
+                font-size: 32px;
+            }
+
+            .diplomados-subtitle {
+                font-size: 18px;
+            }
+
+            .diplomados-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .diplomado-image-container {
+                height: 200px;
+            }
+
+            .diplomado-content {
+                padding: 25px;
+            }
+
+            .diplomado-name {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="diplomados-wrapper">
+        <div class="diplomados-header">
+            <h1 class="diplomados-title">Nuestros Diplomados</h1>
+            <p class="diplomados-subtitle">Formaciones profesionales que transforman vidas y abren nuevos caminos de
+                desarrollo personal y terapéutico.</p>
+        </div>
+
+        <div class="diplomados-grid">
+            <!-- Diplomado en Constelaciones Familiares -->
+            <a href="https://idecf.com/diplomado-en-constelaciones-familiares/" class="diplomado-card">
+                <div class="diplomado-image-container">
+                    <img src="https://idecf.com/wp-content/uploads/2026/01/9953G13.png"
+                        alt="Diplomado en Constelaciones Familiares" class="diplomado-image">
+                    <div class="diplomado-badge">Generación 13</div>
+                </div>
+                <div class="diplomado-content">
+                    <h2 class="diplomado-name">Diplomado en Constelaciones Familiares</h2>
+                    <p class="diplomado-description">
+                        Descubre el poder de la sanación sistémica y cómo nuestras raíces influyen en nuestra vida
+                        actual. Una formación completa en teoría, práctica y vivencias transformadoras.
+                    </p>
+                    <div class="diplomado-info">
+                        <div class="info-item">
+                            <span class="info-icon">📅</span>
+                            <span>Inicia: 04 Feb 2026</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">⏳</span>
+                            <span>24 meses</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">💻</span>
+                            <span>100% Online</span>
+                        </div>
+                    </div>
+                    <span class="diplomado-cta">
+                        Ver más información
+                        <span>→</span>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Aquí se pueden agregar más diplomados en el futuro -->
+
+        </div>
+    </div>
+</body>
+
+</html>
