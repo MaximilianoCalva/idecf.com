@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Académica - IDECF</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        .oferta-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .oferta-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .oferta-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #6D0757;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .oferta-subtitle {
+            font-size: 20px;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Tabs Navigation */
+        .tabs-navigation {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .tab-button {
+            background: white;
+            border: 3px solid #6D0757;
+            color: #6D0757;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(109, 7, 87, 0.1);
+        }
+
+        .tab-button:hover {
+            background: #6D0757;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(109, 7, 87, 0.3);
+        }
+
+        .tab-button.active {
+            background: linear-gradient(135deg, #6D0757 0%, #8E0970 100%);
+            color: white;
+            box-shadow: 0 8px 25px rgba(109, 7, 87, 0.3);
+        }
+
+        /* Tab Content */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content-container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(109, 7, 87, 0.1);
+            min-height: 400px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #6D0757;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .section-description {
+            font-size: 18px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .oferta-wrapper {
+                padding: 40px 15px;
+            }
+
+            .oferta-title {
+                font-size: 32px;
+            }
+
+            .oferta-subtitle {
+                font-size: 18px;
+            }
+
+            .tabs-navigation {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .tab-button {
+                width: 100%;
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+
+            .content-container {
+                padding: 25px;
+            }
+
+            .section-title {
+                font-size: 26px;
+                flex-direction: column;
+            }
+
+            .section-description {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="oferta-wrapper">
+        <div class="oferta-header">
+            <h1 class="oferta-title">Oferta Académica</h1>
+            <p class="oferta-subtitle">Descubre nuestras formaciones profesionales diseñadas para transformar vidas y
+                desarrollar habilidades terapéuticas de excelencia.</p>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="tabs-navigation">
+            <button class="tab-button active" onclick="showTab('diplomados')">
+                🎓 Diplomados
+            </button>
+            <button class="tab-button" onclick="showTab('cursos')">
+                📚 Cursos y Talleres
+            </button>
+        </div>
+
+        <!-- Tab Content: Diplomados -->
+        <div id="diplomados-content" class="tab-content active">
+            <div class="content-container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span>🎓</span>
+                        <span>Diplomados</span>
+                    </h2>
+                    <p class="section-description">
+                        Formaciones profesionales de largo plazo que te preparan para acompañar procesos de
+                        transformación profunda.
+                    </p>
+                </div>
+
+                <!-- Elementor Template para Diplomados -->
+                [elementor-template id="612"]
+            </div>
+        </div>
+
+        <!-- Tab Content: Cursos y Talleres -->
+        <div id="cursos-content" class="tab-content">
+            <div class="content-container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span>📚</span>
+                        <span>Cursos y Talleres</span>
+                    </h2>
+                    <p class="section-description">
+                        Experiencias de aprendizaje intensivas y prácticas para desarrollar habilidades específicas y
+                        profundizar en temas clave.
+                    </p>
+                </div>
+
+                <!-- Elementor Template para Cursos y Talleres -->
+                [elementor-template id="609"]
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Show selected tab content
+            document.getElementById(tabName + '-content').classList.add('active');
+
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
