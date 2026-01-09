@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos y Talleres - IDECF</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        .cursos-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .cursos-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .cursos-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #6D0757;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .cursos-subtitle {
+            font-size: 20px;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Community Invitation Box */
+        .community-box {
+            background: linear-gradient(135deg, #6D0757 0%, #8E0970 100%);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(109, 7, 87, 0.3);
+        }
+
+        .community-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .community-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .community-description {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .community-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+            text-align: left;
+        }
+
+        .benefit-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .benefit-icon {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .benefit-text {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: #25D366;
+            color: white;
+            padding: 20px 50px;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            margin-top: 20px;
+        }
+
+        .whatsapp-button:hover {
+            background: #20BA5A;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-icon {
+            font-size: 32px;
+        }
+
+        /* Info Section */
+        .info-section {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .info-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #6D0757;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .info-text {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .cursos-wrapper {
+                padding: 40px 15px;
+            }
+
+            .cursos-title {
+                font-size: 32px;
+            }
+
+            .cursos-subtitle {
+                font-size: 18px;
+            }
+
+            .community-box {
+                padding: 40px 25px;
+            }
+
+            .community-icon {
+                font-size: 48px;
+            }
+
+            .community-title {
+                font-size: 26px;
+            }
+
+            .community-description {
+                font-size: 16px;
+            }
+
+            .community-benefits {
+                grid-template-columns: 1fr;
+            }
+
+            .whatsapp-button {
+                padding: 18px 40px;
+                font-size: 18px;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .info-section {
+                padding: 30px 20px;
+            }
+
+            .info-title {
+                font-size: 24px;
+            }
+
+            .info-text {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursos-wrapper">
+        <div class="cursos-header">
+            <h1 class="cursos-title">Cursos y Talleres</h1>
+            <p class="cursos-subtitle">
+                Experiencias de aprendizaje intensivas y prácticas para desarrollar habilidades específicas y
+                profundizar en temas clave del desarrollo personal y terapéutico.
+            </p>
+        </div>
+
+        <!-- Community Invitation -->
+        <div class="community-box">
+            <div class="community-icon">💬</div>
+            <h2 class="community-title">¡Únete a Nuestra Comunidad de WhatsApp!</h2>
+            <p class="community-description">
+                Mantente al día con nuestros próximos cursos, talleres y eventos especiales. Recibe información
+                exclusiva, descuentos anticipados y conecta con una comunidad de personas en crecimiento.
+            </p>
+
+            <div class="community-benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">📢</div>
+                    <div class="benefit-text">
+                        <strong>Anuncios exclusivos</strong><br>
+                        Sé el primero en conocer nuevos cursos y talleres
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎁</div>
+                    <div class="benefit-text">
+                        <strong>Descuentos especiales</strong><br>
+                        Acceso anticipado a promociones y becas
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">👥</div>
+                    <div class="benefit-text">
+                        <strong>Comunidad activa</strong><br>
+                        Conecta con personas en tu mismo camino
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📅</div>
+                    <div class="benefit-text">
+                        <strong>Calendario de eventos</strong><br>
+                        Mantente informado de fechas y horarios
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://chat.whatsapp.com/tu-enlace-de-comunidad" class="whatsapp-button" target="_blank">
+                <span class="whatsapp-icon">📱</span>
+                <span>Unirme a la Comunidad</span>
+            </a>
+        </div>
+
+        <!-- Additional Info -->
+        <div class="info-section">
+            <h3 class="info-title">¿Por qué unirte?</h3>
+            <p class="info-text">
+                Nuestra comunidad de WhatsApp es el espacio ideal para estar conectado con las últimas novedades del
+                IDECF.
+                Compartimos contenido de valor, respondemos tus dudas y creamos un ambiente de apoyo mutuo entre todos
+                los miembros.
+                ¡No te pierdas ninguna oportunidad de crecimiento!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
